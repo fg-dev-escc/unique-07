@@ -1,81 +1,30 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { startLogin } from '../../../redux/features/auth/thunks';
-import { consLogged } from '../../../const/consLogged';
 import Breadcrumb from '../../../components/ui/Breadcrumb';
-import { authConfig } from '../authConfig';
+import { useLoginSection } from './useLoginSection';
 
 const LoginSection = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: ''
-  });
-  const [errors, setErrors] = useState({});
-  const [rememberMe, setRememberMe] = useState(false);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-  
-  const { loginErr, loadingLogin, logged } = useSelector(state => state.userReducer);
-  const { data } = authConfig;
-  
-  // Redirect to home if already logged in
-  React.useEffect(() => {
-    if (logged === consLogged.LOGGED) {
-      navigate('/');
-    }
-  }, [logged, navigate]);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-    
-    if (errors[name]) {
-      setErrors(prev => ({
-        ...prev,
-        [name]: ''
-      }));
-    }
-  };
-
-  const validateForm = () => {
-    const newErrors = {};
-    
-    if (!formData.email) {
-      newErrors.email = 'El email es requerido';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'El email no es válido';
-    }
-    
-    if (!formData.password) {
-      newErrors.password = 'La contraseña es requerida';
-    } else if (formData.password.length < 6) {
-      newErrors.password = 'La contraseña debe tener al menos 6 caracteres';
-    }
-    
-    return newErrors;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newErrors = validateForm();
-    
-    if (Object.keys(newErrors).length === 0) {
-      dispatch(startLogin(formData));
-    } else {
-      setErrors(newErrors);
-    }
-  };
+  const {
+    loginSectionHelpers,
+    loginSectionData,
+    formData,
+    errors,
+    rememberMe,
+    loginErr,
+    loadingLogin,
+    logged,
+    handleInputChange,
+    handleSubmit,
+    handleRememberMeChange,
+    handleSocialLogin
+  } = useLoginSection();
 
   return (
     <>
       <Breadcrumb 
-        title="Iniciar Sesión"
-        currentPage="Iniciar Sesión"
+        title={loginSectionData.breadcrumb.title}
+        currentPage={loginSectionData.breadcrumb.currentPage}
       />
       
       <div className="login-area py-120">
@@ -83,20 +32,20 @@ const LoginSection = () => {
           <div className="col-md-5 mx-auto">
             <div className="login-form">
               <div className="login-header">
-                <img src="/assets/img/logo/logo.png" alt="" />
-                <p>Inicia sesión en tu cuenta de Unique Motors</p>
+                <img src={loginSectionData.logo.src} alt={loginSectionData.logo.alt} />
+                <p>{loginSectionData.subtitle}</p>
               </div>
               
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <label>Correo Electrónico</label>
+                  <label>{loginSectionData.form.fields.email.label}</label>
                   <input
-                    type="email"
+                    type={loginSectionData.form.fields.email.type}
                     className="form-control"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="Tu correo electrónico"
+                    placeholder={loginSectionData.form.fields.email.placeholder}
                     disabled={loadingLogin}
                   />
                   {errors.email && (
@@ -105,14 +54,14 @@ const LoginSection = () => {
                 </div>
                 
                 <div className="form-group">
-                  <label>Contraseña</label>
+                  <label>{loginSectionData.form.fields.password.label}</label>
                   <input
-                    type="password"
+                    type={loginSectionData.form.fields.password.type}
                     className="form-control"
                     name="password"
                     value={formData.password}
                     onChange={handleInputChange}
-                    placeholder="Tu contraseña"
+                    placeholder={loginSectionData.form.fields.password.placeholder}
                     disabled={loadingLogin}
                   />
                   {errors.password && (
@@ -123,7 +72,7 @@ const LoginSection = () => {
                 {loginErr && (
                   <div className="alert alert-danger mb-3">
                     <i className="far fa-exclamation-triangle me-2"></i>
-                    {loginErr}
+                    {loginSectionHelpers.formatLoginError(loginErr)}
                   </div>
                 )}
                 
@@ -133,15 +82,17 @@ const LoginSection = () => {
                       className="form-check-input" 
                       type="checkbox" 
                       checked={rememberMe}
-                      onChange={(e) => setRememberMe(e.target.checked)}
+                      onChange={handleRememberMeChange}
                       id="remember"
                       disabled={loadingLogin}
                     />
                     <label className="form-check-label" htmlFor="remember">
-                      Recordarme
+                      {loginSectionData.form.fields.rememberMe.label}
                     </label>
                   </div>
-                  <Link to="/forgot-password" className="forgot-pass">¿Olvidaste tu contraseña?</Link>
+                  <Link to={loginSectionData.links.forgotPassword} className="forgot-pass">
+                    {loginSectionData.buttons.forgotPassword}
+                  </Link>
                 </div>
                 
                 <div className="d-flex align-items-center">
@@ -150,27 +101,34 @@ const LoginSection = () => {
                     className="theme-btn"
                     disabled={loadingLogin}
                   >
-                    {loadingLogin ? (
-                      <>
-                        <i className="far fa-spinner fa-spin"></i> Signing in...
-                      </>
-                    ) : (
-                      <>
-                        <i className="far fa-sign-in"></i> Iniciar Sesión
-                      </>
-                    )}
+                    <i className={loginSectionHelpers.getLoginButtonIcon(loadingLogin)}></i> 
+                    {loginSectionHelpers.getLoginButtonText(loadingLogin)}
                   </button>
                 </div>
               </form>
               
               <div className="login-footer">
-                <p>¿No tienes cuenta? <Link to="/register">Crear cuenta</Link></p>
+                <p>
+                  {loginSectionData.footer.noAccount} 
+                  <Link to={loginSectionData.links.register}>
+                    {loginSectionData.footer.createAccount}
+                  </Link>
+                </p>
                 <div className="social-login">
-                  <p>Continuar con redes sociales</p>
+                  <p>{loginSectionData.socialLogin.title}</p>
                   <div className="social-login-list">
-                    <a href="#"><i className="fab fa-facebook-f"></i></a>
-                    <a href="#"><i className="fab fa-google"></i></a>
-                    <a href="#"><i className="fab fa-twitter"></i></a>
+                    {loginSectionData.socialLogin.providers.map((provider, index) => (
+                      <a 
+                        key={index}
+                        href="#" 
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleSocialLogin(provider.name);
+                        }}
+                      >
+                        <i className={provider.icon}></i>
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>

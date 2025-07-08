@@ -1,0 +1,41 @@
+{
+  "titles": {
+    "myFavorites": "Mis Favoritos"
+  },
+  "buttons": {
+    "viewDetails": "Ver Detalles",
+    "removeFavorite": "Quitar de Favoritos",
+    "browseCars": "Explorar Autos"
+  },
+  "labels": {
+    "vehicles": "vehículos",
+    "model": "Modelo",
+    "year": "Año",
+    "perMonth": "/ mes",
+    "addedOn": "Agregado el"
+  },
+  "placeholders": {
+    "search": "Buscar por título o modelo..."
+  },
+  "sortOptions": [
+    { "value": "newest", "label": "Más Recientes" },
+    { "value": "oldest", "label": "Más Antiguos" },
+    { "value": "price-low", "label": "Precio: Menor a Mayor" },
+    { "value": "price-high", "label": "Precio: Mayor a Menor" },
+    { "value": "rating", "label": "Mejor Calificación" }
+  ],
+  "messages": {
+    "loading": "Cargando favoritos...",
+    "noFavorites": "No tienes favoritos",
+    "addFavorites": "Explora nuestro catálogo y marca tus vehículos favoritos",
+    "confirmRemove": "¿Estás seguro de que quieres quitar este vehículo de tus favoritos?"
+  },
+  "defaults": {
+    "image": "/assets/img/car/default.jpg",
+    "price": "$0",
+    "date": "N/A",
+    "rating": "5.0",
+    "fuel": "Gasolina",
+    "mileage": "N/A"
+  }
+}

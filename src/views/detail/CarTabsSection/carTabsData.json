@@ -1,0 +1,100 @@
+{
+  "tabs": [
+    {
+      "id": "description",
+      "label": "Descripción",
+      "icon": "far fa-file-text"
+    },
+    {
+      "id": "additional",
+      "label": "Información Adicional",
+      "icon": "far fa-info-circle"
+    },
+    {
+      "id": "documents",
+      "label": "Documentos",
+      "icon": "far fa-file-pdf"
+    },
+    {
+      "id": "videos",
+      "label": "Videos",
+      "icon": "far fa-play-circle"
+    },
+    {
+      "id": "reviews",
+      "label": "Reseñas",
+      "icon": "far fa-star"
+    }
+  ],
+  "labels": {
+    "features": "Características",
+    "passed": "Aprobada",
+    "notInspected": "No inspeccionado"
+  },
+  "buttons": {
+    "download": "Descargar",
+    "viewDocument": "Ver Documento"
+  },
+  "additionalFields": [
+    {
+      "key": "vin",
+      "label": "Número VIN",
+      "showEmpty": false
+    },
+    {
+      "key": "license",
+      "label": "Placas",
+      "showEmpty": false
+    },
+    {
+      "key": "registrationDate",
+      "label": "Fecha de Registro",
+      "showEmpty": false
+    },
+    {
+      "key": "lastService",
+      "label": "Último Servicio",
+      "showEmpty": false
+    },
+    {
+      "key": "warranty",
+      "label": "Garantía",
+      "showEmpty": false
+    },
+    {
+      "key": "accidents",
+      "label": "Accidentes",
+      "showEmpty": true
+    },
+    {
+      "key": "owners",
+      "label": "Número de Propietarios",
+      "showEmpty": true
+    },
+    {
+      "key": "location",
+      "label": "Ubicación",
+      "showEmpty": false
+    },
+    {
+      "key": "inspection",
+      "label": "Inspección",
+      "showEmpty": false
+    }
+  ],
+  "messages": {
+    "loading": "Cargando información...",
+    "noDescription": "No hay descripción disponible.",
+    "noDocuments": "No hay documentos disponibles.",
+    "noVideos": "No hay videos disponibles.",
+    "noReviews": "No hay reseñas disponibles.",
+    "videoNotSupported": "Tu navegador no soporta la reproducción de video."
+  },
+  "defaults": {
+    "fieldValue": "No disponible",
+    "date": "No disponible",
+    "accidents": "Sin accidentes reportados",
+    "owners": "1",
+    "userAvatar": "/assets/img/account/user.jpg"
+  }
+}

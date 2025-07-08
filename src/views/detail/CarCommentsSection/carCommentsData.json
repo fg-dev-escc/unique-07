@@ -1,0 +1,41 @@
+{
+  "title": "Comentarios y Reseñas",
+  "buttons": {
+    "hide": "Ocultar",
+    "show": "Mostrar",
+    "submit": "Enviar Reseña",
+    "submitting": "Enviando...",
+    "helpful": "Útil",
+    "loadMore": "Cargar Más"
+  },
+  "labels": {
+    "reviews": "reseñas",
+    "stars": "estrellas",
+    "addReview": "Agregar Reseña",
+    "yourRating": "Tu Calificación",
+    "yourComment": "Tu Comentario",
+    "verified": "Verificado",
+    "pros": "Pros",
+    "cons": "Contras"
+  },
+  "placeholders": {
+    "comment": "Comparte tu experiencia con este vehículo..."
+  },
+  "messages": {
+    "loading": "Cargando comentarios...",
+    "noComments": "No hay comentarios aún",
+    "beFirst": "¡Sé el primero en comentar sobre este vehículo!",
+    "loginRequired": "Debes iniciar sesión para agregar un comentario",
+    "alreadyCommented": "Ya has comentado sobre este vehículo"
+  },
+  "validation": {
+    "ratingRequired": "La calificación es obligatoria",
+    "commentTooShort": "El comentario debe tener al menos 10 caracteres",
+    "commentTooLong": "El comentario no puede exceder 1000 caracteres"
+  },
+  "defaults": {
+    "date": "No disponible",
+    "userName": "Usuario Anónimo",
+    "userAvatar": "/assets/img/account/user.jpg"
+  }
+}

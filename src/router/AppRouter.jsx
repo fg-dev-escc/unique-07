@@ -11,11 +11,12 @@ import Detail from "../views/detail/Detail";
 import LoginSection from "../views/auth/LoginSection/LoginSection";
 import RegisterSection from "../views/auth/RegisterSection/RegisterSection";
 import Profile from "../views/profile/Profile";
-import ProfileSettings from "../views/profile/ProfileSettings";
-import BillingInfo from "../views/profile/BillingInfo";
-import MyListings from "../views/profile/MyListings";
-import Transactions from "../views/profile/Transactions";
-import Favorites from "../views/profile/Favorites";
+import ProfileLayout from "../views/profile/ProfileLayout";
+import SettingsSection from "../views/profile/SettingsSection/SettingsSection";
+import BillingSection from "../views/profile/BillingSection/BillingSection";
+import ListingsSection from "../views/profile/ListingsSection/ListingsSection";
+import TransactionsSection from "../views/profile/TransactionsSection/TransactionsSection";
+import FavoritesSection from "../views/profile/FavoritesSection/FavoritesSection";
 import { PrivateRoute } from "./PrivateRoute";
 import { PublicRoute } from "./PublicRoute";
 import { startRefreshToken } from "../redux/features/auth/thunks";
@@ -87,7 +88,9 @@ export const AppRouter = () => {
           path="/profile" 
           element={
             <PrivateRoute>
-              <Profile />
+              <ProfileLayout>
+                <Profile />
+              </ProfileLayout>
             </PrivateRoute>
           } 
         />
@@ -95,7 +98,9 @@ export const AppRouter = () => {
           path="/profile/settings" 
           element={
             <PrivateRoute>
-              <ProfileSettings />
+              <ProfileLayout title="Configuración">
+                <SettingsSection />
+              </ProfileLayout>
             </PrivateRoute>
           } 
         />
@@ -103,7 +108,9 @@ export const AppRouter = () => {
           path="/profile/billing" 
           element={
             <PrivateRoute>
-              <BillingInfo />
+              <ProfileLayout title="Facturación">
+                <BillingSection />
+              </ProfileLayout>
             </PrivateRoute>
           } 
         />
@@ -111,7 +118,9 @@ export const AppRouter = () => {
           path="/profile/listings" 
           element={
             <PrivateRoute>
-              <MyListings />
+              <ProfileLayout title="Mis Publicaciones">
+                <ListingsSection />
+              </ProfileLayout>
             </PrivateRoute>
           } 
         />
@@ -119,7 +128,9 @@ export const AppRouter = () => {
           path="/profile/transactions" 
           element={
             <PrivateRoute>
-              <Transactions />
+              <ProfileLayout title="Transacciones">
+                <TransactionsSection />
+              </ProfileLayout>
             </PrivateRoute>
           } 
         />
@@ -127,7 +138,9 @@ export const AppRouter = () => {
           path="/profile/favorites" 
           element={
             <PrivateRoute>
-              <Favorites />
+              <ProfileLayout title="Favoritos">
+                <FavoritesSection />
+              </ProfileLayout>
             </PrivateRoute>
           } 
         />

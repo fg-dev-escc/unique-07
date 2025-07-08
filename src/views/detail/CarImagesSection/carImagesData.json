@@ -1,0 +1,26 @@
+{
+  "messages": {
+    "loading": "Cargando imágenes...",
+    "error": "Error al cargar las imágenes",
+    "noImages": "No hay imágenes disponibles"
+  },
+  "labels": {
+    "mainImage": "Imagen principal",
+    "gallery": "Galería",
+    "thumbnails": "Miniaturas",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "close": "Cerrar",
+    "imageCounter": "Imagen {current} de {total}"
+  },
+  "defaults": {
+    "image": "/assets/img/car/default.jpg",
+    "alt": "Imagen del vehículo"
+  },
+  "settings": {
+    "maxImages": 20,
+    "thumbnailSize": "80x60",
+    "preloadNext": 2,
+    "animationDuration": 300
+  }
+}

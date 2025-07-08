@@ -1,0 +1,41 @@
+{
+  "titles": {
+    "myListings": "Mis Publicaciones"
+  },
+  "buttons": {
+    "addListing": "Agregar Publicación",
+    "edit": "Editar",
+    "delete": "Eliminar"
+  },
+  "placeholders": {
+    "search": "Buscar por título o modelo..."
+  },
+  "statusOptions": [
+    { "value": "all", "label": "Todos los Estados" },
+    { "value": "active", "label": "Activos" },
+    { "value": "inactive", "label": "Inactivos" },
+    { "value": "pending", "label": "Pendientes" },
+    { "value": "sold", "label": "Vendidos" },
+    { "value": "expired", "label": "Expirados" }
+  ],
+  "tableHeaders": [
+    "Vehículo",
+    "Estado",
+    "Precio",
+    "Fecha",
+    "Vistas",
+    "Ofertas",
+    "Acciones"
+  ],
+  "messages": {
+    "loading": "Cargando publicaciones...",
+    "noListings": "No tienes publicaciones",
+    "addFirstListing": "Agrega tu primera publicación para empezar a vender",
+    "confirmDelete": "¿Estás seguro de que quieres eliminar esta publicación? Esta acción no se puede deshacer."
+  },
+  "defaults": {
+    "image": "/assets/img/car/default.jpg",
+    "price": "$0",
+    "date": "N/A"
+  }
+}

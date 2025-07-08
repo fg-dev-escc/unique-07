@@ -1,0 +1,63 @@
+{
+  "title": "Vehículos Relacionados",
+  "subtitle": "Otros vehículos que te podrían interesar",
+  "buttons": {
+    "viewDetails": "Ver Detalles",
+    "addToFavorites": "Agregar a Favoritos",
+    "viewAuction": "Ver Subasta",
+    "viewAll": "Ver Todos los Vehículos"
+  },
+  "labels": {
+    "startingBid": "Puja inicial",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "ended": "Finalizado"
+  },
+  "displayFields": [
+    {
+      "key": "year",
+      "label": "Año",
+      "icon": "far fa-calendar",
+      "showEmpty": false
+    },
+    {
+      "key": "mileage",
+      "label": "Kilometraje",
+      "icon": "far fa-road",
+      "showEmpty": false
+    },
+    {
+      "key": "fuel",
+      "label": "Combustible",
+      "icon": "far fa-gas-pump",
+      "showEmpty": false
+    },
+    {
+      "key": "transmission",
+      "label": "Transmisión",
+      "icon": "far fa-cogs",
+      "showEmpty": false
+    }
+  ],
+  "messages": {
+    "loading": "Cargando vehículos relacionados...",
+    "noRelated": "No se encontraron vehículos relacionados"
+  },
+  "defaults": {
+    "image": "/assets/img/car/default.jpg",
+    "title": "Vehículo",
+    "price": "$0",
+    "rating": 5,
+    "reviewCount": 0,
+    "year": "N/A",
+    "mileage": "N/A",
+    "fuel": "N/A",
+    "transmission": "N/A",
+    "fieldValue": "N/A",
+    "location": "No especificado"
+  },
+  "settings": {
+    "maxItems": 3,
+    "similarityThreshold": 2
+  }
+}

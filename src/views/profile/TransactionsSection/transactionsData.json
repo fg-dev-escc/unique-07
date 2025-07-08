@@ -1,0 +1,78 @@
+{
+  "titles": {
+    "transactionHistory": "Historial de Transacciones",
+    "summary": "Resumen"
+  },
+  "buttons": {
+    "viewDetails": "Ver Detalles",
+    "downloadReceipt": "Descargar Recibo",
+    "browseCars": "Explorar Autos"
+  },
+  "labels": {
+    "transactions": "transacciones"
+  },
+  "placeholders": {
+    "search": "Buscar por ID o vehículo..."
+  },
+  "typeOptions": [
+    { "value": "all", "label": "Todos los Tipos" },
+    { "value": "purchase", "label": "Compras" },
+    { "value": "sale", "label": "Ventas" },
+    { "value": "bid", "label": "Pujas" },
+    { "value": "refund", "label": "Reembolsos" },
+    { "value": "fee", "label": "Comisiones" }
+  ],
+  "statusOptions": [
+    { "value": "all", "label": "Todos los Estados" },
+    { "value": "completed", "label": "Completadas" },
+    { "value": "pending", "label": "Pendientes" },
+    { "value": "failed", "label": "Fallidas" },
+    { "value": "cancelled", "label": "Canceladas" }
+  ],
+  "dateRangeOptions": [
+    { "value": "all", "label": "Todo el tiempo" },
+    { "value": "week", "label": "Última semana" },
+    { "value": "month", "label": "Último mes" },
+    { "value": "quarter", "label": "Últimos 3 meses" },
+    { "value": "year", "label": "Último año" }
+  ],
+  "tableHeaders": [
+    "ID / Fecha",
+    "Tipo",
+    "Descripción",
+    "Monto",
+    "Estado",
+    "Acciones"
+  ],
+  "summaryItems": [
+    {
+      "key": "total",
+      "label": "Total de Transacciones",
+      "icon": "fas fa-receipt"
+    },
+    {
+      "key": "completed",
+      "label": "Completadas",
+      "icon": "fas fa-check-circle"
+    },
+    {
+      "key": "totalSpent",
+      "label": "Total Gastado",
+      "icon": "fas fa-arrow-down"
+    },
+    {
+      "key": "totalEarned",
+      "label": "Total Ganado",
+      "icon": "fas fa-arrow-up"
+    }
+  ],
+  "messages": {
+    "loading": "Cargando transacciones...",
+    "noTransactions": "No tienes transacciones",
+    "startBidding": "Comienza a participar en subastas para ver tu historial"
+  },
+  "defaults": {
+    "amount": "$0",
+    "date": "N/A"
+  }
+}

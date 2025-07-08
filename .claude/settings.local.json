@@ -10,7 +10,9 @@
       "Bash(ls:*)",
       "Bash(cp:*)",
       "Bash(rg:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install)"
     ],
     "deny": []
   }

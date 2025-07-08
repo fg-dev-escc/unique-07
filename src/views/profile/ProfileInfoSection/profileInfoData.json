@@ -1,0 +1,66 @@
+{
+  "messages": {
+    "loading": "Cargando información del perfil...",
+    "error": "Error al cargar la información del perfil."
+  },
+  "fields": [
+    {
+      "label": "Teléfono",
+      "key": "phone"
+    },
+    {
+      "label": "Dirección",
+      "key": "address"
+    },
+    {
+      "label": "Ciudad",
+      "key": "city"
+    },
+    {
+      "label": "País",
+      "key": "country"
+    },
+    {
+      "label": "Fecha de registro",
+      "key": "joinDate"
+    },
+    {
+      "label": "Último acceso",
+      "key": "lastLogin"
+    }
+  ],
+  "stats": [
+    {
+      "label": "Publicaciones",
+      "key": "listings"
+    },
+    {
+      "label": "Favoritos",
+      "key": "favorites"
+    },
+    {
+      "label": "Transacciones",
+      "key": "transactions"
+    },
+    {
+      "label": "Calificación",
+      "key": "rating"
+    }
+  ],
+  "status": {
+    "verified": "Verificado",
+    "unverified": "No verificado"
+  },
+  "defaults": {
+    "avatar": "/assets/img/account/user.jpg",
+    "name": "Usuario",
+    "email": "usuario@ejemplo.com",
+    "phone": "No disponible",
+    "address": "No disponible",
+    "city": "No disponible",
+    "country": "No disponible",
+    "joinDate": "No disponible",
+    "lastLogin": "No disponible",
+    "fieldValue": "No disponible"
+  }
+}

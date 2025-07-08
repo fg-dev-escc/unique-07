@@ -1,20 +1,19 @@
 import React from 'react';
 
-import CarImages from './CarImages/CarImages';
-import CarInfo from './CarInfo/CarInfo';
-import CarTabs from './CarTabs/CarTabs';
-import RelatedCars from './RelatedCars/RelatedCars';
+import CarImagesSection from './CarImagesSection/CarImagesSection';
+import CarInfoSection from './CarInfoSection/CarInfoSection';
+import CarTabsSection from './CarTabsSection/CarTabsSection';
+import RelatedCarsSection from './RelatedCarsSection/RelatedCarsSection';
+import BiddingHistorySection from './BiddingHistorySection/BiddingHistorySection';
+import CarCommentsSection from './CarCommentsSection/CarCommentsSection';
 import Breadcrumb from '../../components/ui/Breadcrumb';
-import { detailConfig } from './detailConfig';
 
 const Detail = () => {
-  const { data } = detailConfig;
-  
   return (
     <>
       <Breadcrumb 
-        title={data.breadcrumb.title} 
-        currentPage={data.breadcrumb.currentPage}
+        title="Detalle del Vehículo" 
+        currentPage="Detalle"
       />
       
       {/* car single */}
@@ -22,15 +21,17 @@ const Detail = () => {
         <div className="container">
           <div className="car-single-wrapper">
             <div className="row">
-              <CarImages />
-              <CarInfo />
+              <CarImagesSection />
+              <CarInfoSection />
             </div>
           </div>
         </div>
       </div>
       
-      <CarTabs />
-      <RelatedCars />
+      <CarTabsSection />
+      <BiddingHistorySection />
+      <CarCommentsSection />
+      <RelatedCarsSection />
     </>
   );
 };

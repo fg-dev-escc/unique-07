@@ -1,0 +1,84 @@
+{
+  "title": "Iniciar Sesión",
+  "subtitle": "Inicia sesión en tu cuenta de Unique Motors",
+  "breadcrumb": {
+    "title": "Iniciar Sesión",
+    "currentPage": "Iniciar Sesión"
+  },
+  "form": {
+    "fields": {
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "Tu correo electrónico",
+        "type": "email",
+        "required": true
+      },
+      "password": {
+        "label": "Contraseña",
+        "placeholder": "Tu contraseña",
+        "type": "password",
+        "required": true
+      },
+      "rememberMe": {
+        "label": "Recordarme",
+        "type": "checkbox"
+      }
+    }
+  },
+  "buttons": {
+    "signIn": "Iniciar Sesión",
+    "signingIn": "Iniciando sesión...",
+    "forgotPassword": "¿Olvidaste tu contraseña?"
+  },
+  "icons": {
+    "signIn": "far fa-sign-in",
+    "loading": "far fa-spinner fa-spin"
+  },
+  "links": {
+    "register": "/register",
+    "forgotPassword": "/forgot-password"
+  },
+  "socialLogin": {
+    "title": "Continuar con redes sociales",
+    "providers": [
+      {
+        "name": "facebook",
+        "icon": "fab fa-facebook-f",
+        "label": "Facebook"
+      },
+      {
+        "name": "google",
+        "icon": "fab fa-google",
+        "label": "Google"
+      },
+      {
+        "name": "twitter",
+        "icon": "fab fa-twitter",
+        "label": "Twitter"
+      }
+    ],
+    "urls": {
+      "facebook": "#",
+      "google": "#",
+      "twitter": "#"
+    }
+  },
+  "footer": {
+    "noAccount": "¿No tienes cuenta?",
+    "createAccount": "Crear cuenta"
+  },
+  "validation": {
+    "emailRequired": "El email es requerido",
+    "emailInvalid": "El email no es válido",
+    "passwordRequired": "La contraseña es requerida",
+    "passwordMinLength": "La contraseña debe tener al menos 6 caracteres"
+  },
+  "messages": {
+    "defaultError": "Error al iniciar sesión. Inténtalo de nuevo.",
+    "success": "Sesión iniciada correctamente"
+  },
+  "logo": {
+    "src": "/assets/img/logo/logo.png",
+    "alt": "Unique Motors"
+  }
+}

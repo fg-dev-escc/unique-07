@@ -1,0 +1,105 @@
+{
+  "labels": {
+    "description": "Descripción",
+    "features": "Características",
+    "seller": "Vendedor",
+    "reviews": "reseñas"
+  },
+  "buttons": {
+    "addToFavorites": "Agregar a Favoritos",
+    "share": "Compartir",
+    "contact": "Contactar"
+  },
+  "detailFields": [
+    {
+      "key": "brand",
+      "label": "Marca",
+      "icon": "far fa-car",
+      "showEmpty": false
+    },
+    {
+      "key": "model",
+      "label": "Modelo",
+      "icon": "far fa-car-side",
+      "showEmpty": false
+    },
+    {
+      "key": "year",
+      "label": "Año",
+      "icon": "far fa-calendar",
+      "showEmpty": false
+    },
+    {
+      "key": "mileage",
+      "label": "Kilometraje",
+      "icon": "far fa-road",
+      "showEmpty": false
+    },
+    {
+      "key": "fuel",
+      "label": "Combustible",
+      "icon": "far fa-gas-pump",
+      "showEmpty": false
+    },
+    {
+      "key": "transmission",
+      "label": "Transmisión",
+      "icon": "far fa-cogs",
+      "showEmpty": false
+    },
+    {
+      "key": "engine",
+      "label": "Motor",
+      "icon": "far fa-engine",
+      "showEmpty": false
+    },
+    {
+      "key": "color",
+      "label": "Color",
+      "icon": "far fa-palette",
+      "showEmpty": false
+    },
+    {
+      "key": "condition",
+      "label": "Condición",
+      "icon": "far fa-star",
+      "showEmpty": false
+    },
+    {
+      "key": "doors",
+      "label": "Puertas",
+      "icon": "far fa-door-open",
+      "showEmpty": false
+    },
+    {
+      "key": "seats",
+      "label": "Asientos",
+      "icon": "far fa-user",
+      "showEmpty": false
+    }
+  ],
+  "messages": {
+    "loading": "Cargando información del vehículo...",
+    "linkCopied": "Enlace copiado al portapapeles"
+  },
+  "defaults": {
+    "title": "Vehículo",
+    "price": "$0",
+    "rating": "5.0",
+    "reviewCount": "0",
+    "brand": "N/A",
+    "model": "N/A",
+    "year": "N/A",
+    "mileage": "N/A",
+    "fuel": "N/A",
+    "transmission": "N/A",
+    "engine": "N/A",
+    "color": "N/A",
+    "condition": "N/A",
+    "doors": "N/A",
+    "seats": "N/A",
+    "fieldValue": "N/A",
+    "location": "No especificado",
+    "sellerAvatar": "/assets/img/account/user.jpg"
+  }
+}

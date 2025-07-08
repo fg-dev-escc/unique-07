@@ -1,0 +1,32 @@
+{
+  "labels": {
+    "timeRemaining": "Tiempo Restante",
+    "currentBid": "Puja Actual",
+    "yourHighestBid": "Tu Puja Más Alta",
+    "nextMinBid": "Puja Mínima",
+    "quickBid": "Puja Rápida"
+  },
+  "buttons": {
+    "placeBid": "Realizar Puja",
+    "placing": "Pujando..."
+  },
+  "placeholders": {
+    "bidAmount": "Ingresa tu puja"
+  },
+  "quickBidAmounts": [100, 250, 500, 1000, 2500],
+  "messages": {
+    "auctionEnded": "Subasta Finalizada",
+    "auctionInactive": "Subasta No Activa",
+    "finalBid": "Puja Final",
+    "loginRequired": "Debes iniciar sesión para realizar una puja"
+  },
+  "validation": {
+    "required": "La cantidad es obligatoria",
+    "minimumBid": "La puja mínima es {amount}"
+  },
+  "terms": {
+    "info": "Al realizar una puja, aceptas nuestros términos y condiciones.",
+    "termsLink": "Términos y Condiciones",
+    "helpLink": "Ayuda para Pujar"
+  }
+}

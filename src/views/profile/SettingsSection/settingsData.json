@@ -1,0 +1,124 @@
+{
+  "titles": {
+    "profileSettings": "Configuración del Perfil",
+    "passwordChange": "Cambiar Contraseña"
+  },
+  "buttons": {
+    "edit": "Editar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "updatePassword": "Actualizar Contraseña",
+    "updating": "Actualizando..."
+  },
+  "profileFields": [
+    {
+      "name": "firstName",
+      "label": "Nombre",
+      "type": "text",
+      "placeholder": "Ingresa tu nombre",
+      "required": true,
+      "colSize": 6
+    },
+    {
+      "name": "lastName",
+      "label": "Apellido",
+      "type": "text",
+      "placeholder": "Ingresa tu apellido",
+      "required": true,
+      "colSize": 6
+    },
+    {
+      "name": "email",
+      "label": "Correo Electrónico",
+      "type": "email",
+      "placeholder": "Ingresa tu correo electrónico",
+      "required": true,
+      "colSize": 12
+    },
+    {
+      "name": "phone",
+      "label": "Teléfono",
+      "type": "tel",
+      "placeholder": "Ingresa tu número de teléfono",
+      "required": false,
+      "colSize": 6
+    },
+    {
+      "name": "address",
+      "label": "Dirección",
+      "type": "text",
+      "placeholder": "Ingresa tu dirección",
+      "required": false,
+      "colSize": 6
+    },
+    {
+      "name": "city",
+      "label": "Ciudad",
+      "type": "text",
+      "placeholder": "Ingresa tu ciudad",
+      "required": false,
+      "colSize": 6
+    },
+    {
+      "name": "country",
+      "label": "País",
+      "type": "select",
+      "placeholder": "Selecciona tu país",
+      "required": false,
+      "colSize": 6,
+      "options": [
+        { "value": "mx", "label": "México" },
+        { "value": "us", "label": "Estados Unidos" },
+        { "value": "ca", "label": "Canadá" },
+        { "value": "es", "label": "España" },
+        { "value": "ar", "label": "Argentina" },
+        { "value": "co", "label": "Colombia" },
+        { "value": "pe", "label": "Perú" },
+        { "value": "cl", "label": "Chile" }
+      ]
+    },
+    {
+      "name": "bio",
+      "label": "Biografía",
+      "type": "textarea",
+      "placeholder": "Cuéntanos sobre ti",
+      "required": false,
+      "colSize": 12,
+      "rows": 4
+    }
+  ],
+  "passwordFields": [
+    {
+      "name": "currentPassword",
+      "label": "Contraseña Actual",
+      "type": "password",
+      "placeholder": "Ingresa tu contraseña actual",
+      "required": true,
+      "colSize": 12
+    },
+    {
+      "name": "newPassword",
+      "label": "Nueva Contraseña",
+      "type": "password",
+      "placeholder": "Ingresa tu nueva contraseña",
+      "required": true,
+      "colSize": 6
+    },
+    {
+      "name": "confirmPassword",
+      "label": "Confirmar Contraseña",
+      "type": "password",
+      "placeholder": "Confirma tu nueva contraseña",
+      "required": true,
+      "colSize": 6
+    }
+  ],
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Ingresa un correo electrónico válido",
+    "invalidPhone": "Ingresa un número de teléfono válido",
+    "passwordLength": "La contraseña debe tener al menos 8 caracteres",
+    "passwordMismatch": "Las contraseñas no coinciden"
+  }
+}

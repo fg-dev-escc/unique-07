@@ -1,10 +1,22 @@
 import React from 'react';
 
-import ProfileInfo from './ProfileInfo/ProfileInfo';
+import ProfileInfoSection from './ProfileInfoSection/ProfileInfoSection';
+import SettingsSection from './SettingsSection/SettingsSection';
+import BillingSection from './BillingSection/BillingSection';
+import ListingsSection from './ListingsSection/ListingsSection';
+import FavoritesSection from './FavoritesSection/FavoritesSection';
+import TransactionsSection from './TransactionsSection/TransactionsSection';
 
 const Profile = () => {
   return (
-    <ProfileInfo />
+    <>
+      <ProfileInfoSection />
+      <SettingsSection />
+      <BillingSection />
+      <ListingsSection />
+      <FavoritesSection />
+      <TransactionsSection />
+    </>
   );
 };
 

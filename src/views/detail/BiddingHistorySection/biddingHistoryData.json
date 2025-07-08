@@ -1,0 +1,39 @@
+{
+  "title": "Historial de Pujas",
+  "buttons": {
+    "hide": "Ocultar",
+    "show": "Mostrar",
+    "loadMore": "Cargar Más"
+  },
+  "labels": {
+    "totalBids": "Total de Pujas",
+    "bidders": "Pujadores",
+    "highestBid": "Puja Más Alta",
+    "averageBid": "Puja Promedio",
+    "winning": "Ganadora"
+  },
+  "tableHeaders": [
+    "Posición",
+    "Monto",
+    "Pujador",
+    "Fecha",
+    "Estado"
+  ],
+  "timeLabels": {
+    "justNow": "Hace un momento",
+    "minutesAgo": "min",
+    "hoursAgo": "h",
+    "daysAgo": "días"
+  },
+  "messages": {
+    "loading": "Cargando historial de pujas...",
+    "noBids": "No hay pujas aún",
+    "beFirstBidder": "¡Sé el primero en pujar por este vehículo!"
+  },
+  "defaults": {
+    "price": "$0",
+    "date": "No disponible",
+    "bidderName": "Usuario Anónimo",
+    "userAvatar": "/assets/img/account/user.jpg"
+  }
+}

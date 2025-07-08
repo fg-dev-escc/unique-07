@@ -1,0 +1,109 @@
+{
+  "titles": {
+    "billingInfo": "Información de Facturación",
+    "paymentMethods": "Métodos de Pago"
+  },
+  "buttons": {
+    "edit": "Editar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "addPayment": "Agregar Método de Pago",
+    "remove": "Eliminar"
+  },
+  "labels": {
+    "default": "Predeterminado"
+  },
+  "billingFields": [
+    {
+      "name": "firstName",
+      "label": "Nombre",
+      "type": "text",
+      "placeholder": "Nombre para facturación",
+      "required": true,
+      "colSize": 6
+    },
+    {
+      "name": "lastName",
+      "label": "Apellido",
+      "type": "text",
+      "placeholder": "Apellido para facturación",
+      "required": true,
+      "colSize": 6
+    },
+    {
+      "name": "company",
+      "label": "Empresa",
+      "type": "text",
+      "placeholder": "Nombre de la empresa (opcional)",
+      "required": false,
+      "colSize": 12
+    },
+    {
+      "name": "address",
+      "label": "Dirección",
+      "type": "text",
+      "placeholder": "Dirección de facturación",
+      "required": true,
+      "colSize": 12
+    },
+    {
+      "name": "city",
+      "label": "Ciudad",
+      "type": "text",
+      "placeholder": "Ciudad",
+      "required": true,
+      "colSize": 6
+    },
+    {
+      "name": "state",
+      "label": "Estado/Provincia",
+      "type": "text",
+      "placeholder": "Estado o provincia",
+      "required": false,
+      "colSize": 6
+    },
+    {
+      "name": "zipCode",
+      "label": "Código Postal",
+      "type": "text",
+      "placeholder": "Código postal",
+      "required": true,
+      "colSize": 6
+    },
+    {
+      "name": "country",
+      "label": "País",
+      "type": "select",
+      "placeholder": "Selecciona tu país",
+      "required": true,
+      "colSize": 6,
+      "options": [
+        { "value": "mx", "label": "México" },
+        { "value": "us", "label": "Estados Unidos" },
+        { "value": "ca", "label": "Canadá" },
+        { "value": "es", "label": "España" },
+        { "value": "ar", "label": "Argentina" },
+        { "value": "co", "label": "Colombia" },
+        { "value": "pe", "label": "Perú" },
+        { "value": "cl", "label": "Chile" }
+      ]
+    },
+    {
+      "name": "taxId",
+      "label": "RFC/Tax ID",
+      "type": "text",
+      "placeholder": "RFC o Tax ID (opcional)",
+      "required": false,
+      "colSize": 12
+    }
+  ],
+  "messages": {
+    "noPaymentMethods": "No has agregado ningún método de pago.",
+    "confirmRemove": "¿Estás seguro de que quieres eliminar este método de pago?"
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "invalidZipCode": "Ingresa un código postal válido"
+  }
+}

@@ -1,0 +1,564 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+/* -----------------global----------------- */
+h3 {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+}
+p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.left {
+  left: 10px;
+}
+.right {
+  right: 10px;
+}
+.BP {
+  background-color: #e6d5d7;
+  color: rgb(97, 3, 3);
+  border-color: #e6d5d7;
+}
+
+.BP:hover { 
+  background-color: #dab0b4 !important;
+  color: rgb(97, 3, 3) !important;
+  border-color: #e6d5d7 !important;
+}
+/* -----------------logo----------------- */
+.logo {
+  height: 120px;
+}
+.logoSmall {
+  height: 25px;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+.contenedorLogo{
+  max-width: 1200px;
+  margin: auto;
+}
+/* -----------------navBar-----------------*/
+.menu {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background: #323233;
+  color: white;
+  padding: 14px 0;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  font-weight: 400;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  z-index: 1000;
+  border-radius: 0;
+  
+}
+.MenuItem {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.MenuItem:hover {
+  background: #7c7c7c;
+  color: #fff;
+}
+.menuModal{
+  display: none;
+}
+/* Búsqueda */
+.contenedorBusqueda{
+  width: 350px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: scroll;
+  min-height: 100px;
+  max-height: 300px;
+  z-index: 5;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 5;
+  /*  */
+
+}
+
+.contenedorBusqueda .busquedaItem{
+  padding: 5px; 
+  color: black;
+  cursor: pointer;
+}
+
+.busquedaItem img{
+  border-radius: 10px;
+};
+
+
+/* Login */
+.Login_loginPage {
+  top: 0;
+  left: 0;
+
+  background-color: white;
+  padding-top: 50px;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.Login_loginCaja {
+  margin: auto;
+  top: 200px;
+  max-width: 300px;
+
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.Login_cajaLogo {
+  text-align: center;
+}
+.Login_logo {
+  height: 80px;
+  margin-top: 10px;
+}
+.Login_input {
+  padding: 10px;
+}
+.Login_input {
+  padding: 10px;
+}
+
+.Login_submit {
+  padding: 10px;
+  text-align: center;
+}
+
+.logout {
+  color: dimgrey;
+
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: crimson;
+}
+
+/* -----------------Formulario Ventas---------------- */
+
+.carouselContainer {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttonContainer {
+  margin-bottom: 1rem;
+}
+.componentWrapper {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* -----------------contenido----------------- */
+.contenido{
+  max-width: 1200px;
+  margin: auto;
+  /* padding: 0 20px; */
+}
+  /* carrucel */
+.carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+.dots {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active {
+  background: #333;
+}
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+.carousel-track {
+  display: flex;
+}
+.carousel-item {
+  flex: 0 0 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.carousel-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.imgCarousell {
+  cursor: pointer;
+}
+.imgCarousell:hover {
+ opacity: .7;
+}
+  /* Izquierdo */
+.Index_ImgDetalle {
+  max-width: 95%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Index_ImgDetalle:hover {
+  opacity: 0.7;
+}
+.transparentBubble {
+  width: max-content;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  color: red;
+  text-align: center;
+  padding: 7px;
+}.Index_TituloCard {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: left;
+}
+.Index_Descripcion {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+/* Derecho */
+.banner{
+  width: 100%;
+}
+.imgGridContenedor{
+  padding-top:50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.imgGrid {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+}
+.imgGrid:hover {
+  transform: scale(1.3);
+  transition: all 0.5s ease;
+  z-index: 90;
+  opacity: 1;
+}
+/* Detalle */
+.contenedorDetalle{
+  width: 100%;
+}
+.sticky-row {
+  position: sticky;
+  top: 54px; /* Ajusta este valor al alto de tu barra fija */
+  background: white; /* Evita transparencia si hay scroll */
+  z-index: 100; /* Asegúrate de que esté por encima del contenido */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.D_1_Titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: teal;
+}
+.D_1_Contenedor{
+  width: 100%;
+  display:flex ;
+  justify-content: space-around;
+  align-items: center;
+}
+.D_1_Ofertas{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  gap: 5px;
+}
+.D_1_Ofertas b{
+  margin: 0 0;
+}
+.D_ImagenPrincipal {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+}
+.cajaOfertas{
+  padding: 10px;
+}
+.cajaOfertas.ofertaMayor{
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+}
+.contenedorPujaMartillo{
+  margin-top: 5px;
+}
+.Preguntas {
+  font-size: 18px;
+  padding: 5px;
+}
+.subTitulo {
+  margin: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: teal;
+}
+.Detalles_Descripcion {
+  font-size: 18px;
+  padding: 20px 20px 10px 5px;
+  line-height: 30px;
+  text-align: left;
+}
+.Comentarios {
+  font-size: 18px;
+  padding: 20px;
+  line-height: 30px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  color: #6a6a6a;
+  margin-bottom: 10px;
+}
+
+.ComentariosUsuario{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.ComentariosComentario{
+  width: 100%;
+  text-align: start;
+}
+
+/* -----------------Responsivo width < 1200 ----------------- */
+
+/* -----------------Responsivo  width < 992 ----------------- */
+@media screen and ( width < 992px) {
+  /* Formulario Inicio */
+  .card-slider-wrapper {
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  /* nav */
+  .fixed{
+    display: inline-block;
+  }
+
+  /* Detalle */
+  .sticky-row {   
+    top: 80px; /* Ajusta este valor al alto de tu barra fija */
+    left: 40px; /* Asegúrate de que esté alineado a la izquierda */
+  }
+  .formPuja{
+    width: max-content;
+  }
+  .inputPuja{
+    display: block;
+    width: 100%;
+  }
+  /* .imgGridContenedor .imgGrid{
+    width: 100px;
+  } */
+}
+
+/* -----------------Responsivo width < 768p----------------- */
+@media screen and (width < 768px) {
+  /* ---logo--- */
+  .contenedorLogo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logoSmall {
+    height: 20px;
+    margin-top: 1px;
+  }
+  
+  /* ---navbar--- */
+  .menu {
+    width: 100%;
+    display: block;
+  }
+  .menuModal{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    background: #323233;
+    height: fit-content;
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    border-radius: 0 0 10px 10px;
+    z-index: 1000;
+  }
+  /* busqueda form */
+  .contenedorBusqueda{
+  right: 0px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 5;
+}
+
+  /* Formulario Inicial */
+  .card-slider-wrapper {
+    min-height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  /* ---contenido--- */
+    /* carrucel */
+  .carousel {
+    display: none;
+  }
+
+    /* Izquierdo  */
+  .contenedorIzquierdo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Detalle */
+
+  .sticky-row {
+    width: 100%;
+    top: 80px; /* Ajusta este valor al alto de tu barra fija */
+    left: 40px; /* Asegúrate de que esté alineado a la izquierda */
+  }
+  .D_1_Titulo{
+    text-align: left;
+  }
+  .Comentarios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* -----------------Responsivo width < 576 ----------------- */
+@media screen and (width < 576px) {
+
+  /* ---logo--- */
+  .logoSmall {
+    height: 20px;
+    margin-top: 1px;
+  }
+  
+  /* ---navbar--- */
+  .menu {
+    width: 100%;
+    display: block;
+  }
+  .menuModal{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    background: #323233;
+    height: fit-content;
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    border-radius: 0 0 10px 10px;
+    z-index: 1000;
+  }
+
+  /* busqueda Form */
+  
+
+
+  /* Formulario Inicio */
+  .card-slider-wrapper {
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  /* ---contenido--- */
+    /* carrucel */
+  .carousel {
+    display: none;
+  }
+
+    /* Izquierdo  */
+  .contenedorIzquierdo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Detalle */
+
+  .sticky-row {
+    width: 100%;
+    top: 80px; /* Ajusta este valor al alto de tu barra fija */
+    left: 40px; /* Asegúrate de que esté alineado a la izquierda */
+  }
+  .D_1_Titulo{
+    text-align: left;
+  }
+}

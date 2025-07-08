@@ -1,0 +1,30 @@
+{
+  "buttons": {
+    "aboutMore": "Saber Más",
+    "learnMore": "Explorar Autos"
+  },
+  "routes": {
+    "about": "/about",
+    "cars": "/cars"
+  },
+  "slides": [
+    {
+      "image": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      "subtitle": "Encuentra tu Auto Ideal",
+      "title": "Subastas de Vehículos <span>Premium</span>",
+      "description": "Descubre miles de vehículos de calidad en nuestras subastas en línea. Los mejores precios, la mayor variedad y la confianza que necesitas para tu próxima compra."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1648594756894-151b3eb89400?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "subtitle": "Mejores Precios Garantizados",
+      "title": "Compra y Vende con <span>Confianza</span>",
+      "description": "Nuestra plataforma te ofrece seguridad y transparencia en cada transacción. Participa en subastas en tiempo real y encuentra el vehículo perfecto para ti."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      "subtitle": "Subastas en Tiempo Real",
+      "title": "La Mejor Experiencia de <span>Compra</span>",
+      "description": "Únete a nuestra comunidad de compradores y vendedores. Accede a un catálogo exclusivo de vehículos verificados y certificados por nuestros expertos."
+    }
+  ]
+}

@@ -1,28 +1,36 @@
 import React from 'react';
 
-// data
-const heroData = {
-  title: "About Us",
-  backgroundImage: "assets/img/breadcrumb/01.jpg",
-  breadcrumbItems: [
-    { label: 'Home', path: 'index.html' },
-    { label: 'About Us', path: '/about', active: true }
-  ]
-};
+import { useHeroSection } from './useHeroSection';
 
 const HeroSection = () => {
-  // render
+  const {
+    heroSectionHelpers,
+    heroSectionData,
+    handleBreadcrumbNavigation
+  } = useHeroSection();
+
   return (
-    <div className="site-breadcrumb" style={{ background: `url(${heroData.backgroundImage})` }}>
+    <div 
+      className="site-breadcrumb" 
+      style={{ background: heroSectionHelpers.formatBackgroundImage(heroSectionData.backgroundImage) }}
+    >
       <div className="container">
-        <h2 className="breadcrumb-title">{heroData.title}</h2>
-        <ul className="breadcrumb-menu">
-          {heroData.breadcrumbItems.map((item, index) => (
-            <li key={index} className={item.active ? 'active' : ''}>
+        <h2 className="breadcrumb-title">{heroSectionData.title}</h2>
+        <ul className="breadcrumb-menu" aria-label={heroSectionData.accessibility.breadcrumbAriaLabel}>
+          {heroSectionData.breadcrumbItems.map((item, index) => (
+            <li key={index} className={heroSectionHelpers.getBreadcrumbClass(item)}>
               {item.active ? (
-                item.label
-              ) : (
+                <span aria-current="page">{item.label}</span>
+              ) : heroSectionHelpers.shouldUseAnchor(item) ? (
                 <a href={item.path}>{item.label}</a>
+              ) : (
+                <button 
+                  type="button"
+                  onClick={() => handleBreadcrumbNavigation(item)}
+                  className="breadcrumb-link"
+                >
+                  {item.label}
+                </button>
               )}
             </li>
           ))}

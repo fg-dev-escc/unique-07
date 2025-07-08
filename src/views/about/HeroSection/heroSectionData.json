@@ -1,0 +1,24 @@
+{
+  "title": "About Us",
+  "backgroundImage": "assets/img/breadcrumb/01.jpg",
+  "breadcrumbItems": [
+    { 
+      "label": "Home", 
+      "path": "/", 
+      "active": false 
+    },
+    { 
+      "label": "About Us", 
+      "path": "/about", 
+      "active": true 
+    }
+  ],
+  "settings": {
+    "enableSchemaMarkup": true,
+    "lazyLoadBackground": false
+  },
+  "accessibility": {
+    "ariaLabel": "Página actual: About Us",
+    "breadcrumbAriaLabel": "Navegación de migas de pan"
+  }
+}
